@@ -1,0 +1,36 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; }
+
+.menu {
+  display: flex;            /* ativa o flexbox */
+  justify-content: center;  /* centraliza no eixo principal */
+  gap: 24px;
+  background: #111;
+  padding: 16px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Direção muda no mobile */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Caixa para demonstrar align-items */
+.caixa {
+  display: flex;
+  height: 200px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  justify-content: center;
+  align-items: center; /* centraliza verticalmente */
+  gap: 8px;
+  margin: 24px;
+}
