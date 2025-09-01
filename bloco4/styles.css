@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; }
+
+.galeria {
+  display: grid; /* ativa o grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+  gap: 10px; /* espaçamento entre os itens */
+  margin: 24px;
+}
+
+.item {
+  background: #0d6efd;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Item 1 ocupa duas colunas */
+.item:nth-child(1) {
+  grid-column: 1 / 3;
+  background: #198754;
+}
+
+/* Item 2 ocupa duas linhas */
+.item:nth-child(2) {
+  grid-row: 2 / 4;
+  background: #dc3545;
+}
